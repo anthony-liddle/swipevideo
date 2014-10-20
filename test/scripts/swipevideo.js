@@ -6,12 +6,12 @@
 
     function SwipeVideo(params) {
       this.options = {
-        intervaltime: 10,     // The video will update every __ms
-        framerate: 0.01,      // This is the step in framerate every amount of ms set in intervaltime
-        swipelength: 200,     // Min swipe length in pixels to advance (Won't work when animating on swipe)
+        intervaltime: 10,         // The video will update every __ms
+        framerate: 0.01,          // This is the step in framerate every amount of ms set in intervaltime
+        swipelength: 200,         // Min swipe length in pixels to advance (Won't work when animating on swipe)
         element: 'swipe-video',   // Default name of the Swipe-Video element
         animateonswipe: false,    // Will update the animation frame by frame while swiping
-        aroundthehorn: false    // Around the horn only works when animating on swipe. Allows the video to loop on swipe
+        aroundthehorn: false      // Around the horn only works when animating on swipe. Allows the video to loop on swipe
       };
 
       // overwrite any of the above default settings if set
