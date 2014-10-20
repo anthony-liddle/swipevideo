@@ -25,12 +25,12 @@ You can also set various options:
 
 ``` js
 new SwipeVideo({
-	intervaltime: 10,			// The video will update every __ms
-	framerate: 0.01,			// This is the step in framerate every amount of ms set in intervaltime
-	swipelength: 200,			// Min swipe length in pixels to advance (Won't work when animating on swipe)
-	element: 'swipe-video',		// Default name of the Swipe-Video element
-	animateonswipe: false,		// Will update the animation frame by frame while swiping
-	aroundthehorn: false		// Around the horn only works when animating on swipe. Allows the video to loop on swipe
+  intervaltime: 10,     // The video will update every __ms
+  framerate: 0.01,      // This is the step in framerate every amount of ms set in intervaltime
+  swipelength: 200,     // Min swipe length in pixels to advance (Won't work when animating on swipe)
+  element: 'swipe-video',   // Default name of the Swipe-Video element
+  animateonswipe: false,    // Will update the animation frame by frame while swiping
+  aroundthehorn: false    // Around the horn only works when animating on swipe. Allows the video to loop on swipe
 });
 ```
 
@@ -52,27 +52,27 @@ The item in `.swipe-dot-nav` will also need a `data-moment` attribute that be eq
 
 ``` html
 <div id="swipe-video" class="swipe-video">
-	<video src="video/car_video.m4v" width="1024" height="768"></video>
-	<div class="swipe-video-overlay">
-		<img src="images/slide-1.jpg" class="overlay" data-time="0"		data-overlay="screen_one" />
-		<img src="images/slide-2.jpg" class="overlay" data-time="2"		data-overlay="screen_two" />
-		<img src="images/slide-3.jpg" class="overlay" data-time="3.5"	data-overlay="screen_three" />
-		<img src="images/slide-4.jpg" class="overlay" data-time="5.7"	data-overlay="screen_four" />
-		<img src="images/slide-5.jpg" class="overlay" data-time="8"		data-overlay="screen_five" />
-		<img src="images/slide-6.jpg" class="overlay" data-time="10.5"	data-overlay="screen_six" />
-	</div>
-	<!-- The below .swipe-dot-nav is optional -->
-	<div class="swipe-dot-nav">
-		<ul>
-			<li data-moment="screen_one"></li>
-			<li data-moment="screen_two"></li>
-			<li data-moment="screen_three"></li>
-			<li data-moment="screen_four"></li>
-			<li data-moment="screen_five"></li>
-			<li data-moment="screen_six"></li>
-		</ul>
-	</div>
-	<!-- /optional .swipe-dot-nav -->
+  <video src="video/car_video.m4v" width="1024" height="768"></video>
+  <div class="swipe-video-overlay">
+    <img src="images/slide-1.jpg" class="overlay" data-time="0"   data-overlay="screen_one" />
+    <img src="images/slide-2.jpg" class="overlay" data-time="2"   data-overlay="screen_two" />
+    <img src="images/slide-3.jpg" class="overlay" data-time="3.5" data-overlay="screen_three" />
+    <img src="images/slide-4.jpg" class="overlay" data-time="5.7" data-overlay="screen_four" />
+    <img src="images/slide-5.jpg" class="overlay" data-time="8"   data-overlay="screen_five" />
+    <img src="images/slide-6.jpg" class="overlay" data-time="10.5"  data-overlay="screen_six" />
+  </div>
+  <!-- The below .swipe-dot-nav is optional -->
+  <div class="swipe-dot-nav">
+    <ul>
+      <li data-moment="screen_one"></li>
+      <li data-moment="screen_two"></li>
+      <li data-moment="screen_three"></li>
+      <li data-moment="screen_four"></li>
+      <li data-moment="screen_five"></li>
+      <li data-moment="screen_six"></li>
+    </ul>
+  </div>
+  <!-- /optional .swipe-dot-nav -->
 </div>
 ```
 
@@ -82,12 +82,12 @@ As a default, it is set up to fade in the overlays:
 
 ``` css
 overlay {
-	opacity: 0;
-	transition: .25s opacity ease-out;
+  opacity: 0;
+  transition: .25s opacity ease-out;
 }
 
 overlay.active {
-	opacity: 1;
+  opacity: 1;
 }
 ```
 
@@ -95,19 +95,19 @@ You can get as advanced as you'd like:
 
 ``` html
 <div class="overlay title" data-overlay="tile_moment">
-	<h1>This is my fancy title</h1>
+  <h1>This is my fancy title</h1>
 </div>
 ```
 
 ``` css
 overlay.title h1 {
-	opacity:0;
-	transform:skewX(0deg);
-	transition: .25s transform ease-out;
+  opacity:0;
+  transform:skewX(0deg);
+  transition: .25s transform ease-out;
 }
 overlay.title.active h1 {
-	opacity:1;
-	transform:skewX(180deg);
+  opacity:1;
+  transform:skewX(180deg);
 }
 ```
 

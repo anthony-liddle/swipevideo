@@ -1,45 +1,45 @@
 .swipe-video {
-	width: 1024px;
-	height: 768px;
+  width: 1024px;
+  height: 768px;
 
-	.overlay {
-		width: 1024px;
-		height: 768px;
-	}
+  .overlay {
+    width: 1024px;
+    height: 768px;
+  }
 
-	.swipe-dot-nav {
-		position: absolute;
-		bottom: 20px;
-		left: 50%;
-		margin-left: -142px;
-		width: 284px;
+  .swipe-dot-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -142px;
+    width: 284px;
 
-		ul {
-			padding: 0;
+    ul {
+      padding: 0;
 
-			li {
-				display: inline-block;
-				margin: 0 10px;
-				width: 24px;
-				height: 24px;
-				background-color: #fff;
-				list-style-type: none;
-				cursor: pointer;
-				border-radius: 50%;
+      li {
+        display: inline-block;
+        margin: 0 10px;
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        list-style-type: none;
+        cursor: pointer;
+        border-radius: 50%;
 
-				&.active {
-					background-color: #f00;
+        &.active {
+          background-color: #f00;
 
-					&:hover {
-						cursor:default;
-						background-color: #f00;
-					}
-				}
+          &:hover {
+            cursor:default;
+            background-color: #f00;
+          }
+        }
 
-				&:hover {
-					background-color: #0f0;
-				}
-			}
-		}
-	}
+        &:hover {
+          background-color: #0f0;
+        }
+      }
+    }
+  }
 }
