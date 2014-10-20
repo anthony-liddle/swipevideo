@@ -1,0 +1,17 @@
+.swipe-video {
+	position: relative;
+
+	video {
+		position: absolute;
+	}
+
+	.overlay {
+		position: absolute;
+		pointer-events: none;
+		opacity: 0;
+		transition: .25s opacity ease-out;
+		&.active {
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Swipe Video</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../dist/swipevideo.min.css" />
+	<link rel="stylesheet" href="styles/css/custom.min.css" />
+</head>
+<body>
+
+	<!-- EXAMPLE HTML STARTS -->
+	<div id="swipe-video" class="swipe-video">
+		<video src="video/car_video.m4v" width="1024" height="768"></video>
+
+		<div class="swipe-video-overlay">
+			<img src="images/slide-1.jpg" class="overlay" data-time="0"		data-overlay="screen_one" />
+			<img src="images/slide-2.jpg" class="overlay" data-time="2"		data-overlay="screen_two" />
+			<img src="images/slide-3.jpg" class="overlay" data-time="3.5"	data-overlay="screen_three" />
+			<img src="images/slide-4.jpg" class="overlay" data-time="5.7"	data-overlay="screen_four" />
+			<img src="images/slide-5.jpg" class="overlay" data-time="8"		data-overlay="screen_five" />
+			<img src="images/slide-6.jpg" class="overlay" data-time="10.5"	data-overlay="screen_six" />
+		</div>
+
+		<div class="swipe-dot-nav">
+			<ul>
+				<li data-moment="screen_one"></li>
+				<li data-moment="screen_two"></li>
+				<li data-moment="screen_three"></li>
+				<li data-moment="screen_four"></li>
+				<li data-moment="screen_five"></li>
+				<li data-moment="screen_six"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- EXAMPLE HTML ENDS -->
+
+	<script src="../dist/swipevideo.min.js"></script>
+
+	<script>
+			new SwipeVideo(); // Needed to call the video so you can pass in your own options.
+	</script>
+
+</body>
+</html>

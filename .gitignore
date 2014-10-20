@@ -1,0 +1,12 @@
+# Node JS Files
+node_modules/
+
+# Mac OS Files
+.DS_Store
+
+# Sass Files
+.sass-cache/
+
+# Images/Video
+test/video/
+test/images/
